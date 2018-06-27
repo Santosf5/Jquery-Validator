@@ -1,0 +1,236 @@
+@import "lesshat";
+
+body{
+	font-family: 'Raleway';
+}
+
+header{
+	text-align: center;
+	padding: 120px 0;
+	background: #fff;
+	color: #000;
+
+	h1{
+		margin: 0 0 15px 0;
+		padding: 0;
+		font-size: 42px;
+		font-weight: normal;
+	}
+
+	h3{
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: bold;
+		color: #999;
+		a{
+			color: #09c;
+			text-decoration: none;
+
+			&:hover{
+				color: #09c;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+section{
+	.wrap{
+		width: 1024px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 120px 0 60px 0;
+	}
+	
+	.btn{
+		margin: 0 30px 60px 30px;
+	}
+
+	&.one{
+		background: #1abc9c;
+	}
+
+	&.two{
+		background: #f5d76e;
+	}
+
+	&.three{
+		background: #d24d57;
+	}
+
+	&.four{
+		background: #f1a9a0;
+	}
+
+	&.five{
+		background: #c5eff7;
+	}
+
+	&.six{
+		background: #fde3a7;
+	}
+
+	&.seven{
+		background: #81cfe0;
+	}
+}
+
+
+
+@default_color: #ffffff;
+@primary_color: #3498db;
+@success_color: #2ecc71;
+@info_color: #81cfe0;
+@warning_color: #f39c12;
+@danger_color: #c0392b;
+
+.btn{
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding: 13px 17px;
+	border: none;
+	.border-radius(2px);
+	.transition(color .2s linear, background-color .2s linear);
+	
+
+	&.btn-default{
+		color: #000;
+		background-color: @default_color;
+		border: 1px solid darken(@default_color, 10%);
+		
+		&.btn-border{
+			border-color: @default_color;
+			color: #fff;
+		}
+
+		&.btn-3d{
+			.box-shadow(inset 0 -2px 0 darken(@default_color, 20%));
+		}
+
+		&:hover{
+			background-color: darken(@default_color, 10%);
+			color: #000;
+		}
+	}
+
+	&.btn-primary{
+		background-color: @primary_color;
+
+		&.btn-border{
+			border-color: @primary_color;
+			color: @primary_color;
+		}
+
+		&.btn-3d{
+			.box-shadow(inset 0 -2px 0 darken(@primary_color, 20%));
+		}
+
+		&:hover{
+			background-color: darken(@primary_color, 10%);
+			color: #fff;
+		}
+	}
+
+	&.btn-success{
+		background-color: @success_color;
+
+		&.btn-border{
+			border-color: @success_color;
+			color: @success_color;
+		}
+
+		&.btn-3d{
+			.box-shadow(inset 0 -2px 0 darken(@success_color, 20%));
+		}
+
+		&:hover{
+			background-color: darken(@success_color, 10%);
+			color: #fff;
+		}
+	}
+
+	&.btn-info{
+		background-color: @info_color;
+
+		&.btn-border{
+			border-color: @info_color;
+			color: @info_color;
+		}
+
+		&.btn-3d{
+			.box-shadow(inset 0 -2px 0 darken(@info_color, 20%));
+		}
+
+		&:hover{
+			background-color: darken(@info_color, 10%);
+			color: #fff;
+		}
+	}
+
+	&.btn-warning{
+		background-color: @warning_color;
+
+		&.btn-border{
+			border-color: @warning_color;
+			color: @warning_color;
+		}
+
+		&.btn-3d{
+			.box-shadow(inset 0 -2px 0 darken(@warning_color, 20%));
+		}
+
+		&:hover{
+			background-color: darken(@warning_color, 10%);
+			color: #fff;
+		}
+	}
+
+	&.btn-danger{
+		background-color: @danger_color;
+
+		&.btn-border{
+			border-color: @danger_color;
+			color: @danger_color;
+		}
+
+		&.btn-3d{
+			.box-shadow(inset 0 -2px 0 darken(@danger_color, 20%));
+		}
+
+		&:hover{
+			background-color: darken(@danger_color, 10%);
+			color: #fff;
+		}
+	}
+
+	&.btn-lg{
+		font-size: 14px;
+		padding: 17px 24px;
+	}
+	
+	&.btn-sm{
+		padding: 9px 14px;
+	}
+
+
+	&.btn-xs{
+		font-size: 11px;
+		padding: 7px 12px;
+	}
+
+	&.btn-border{
+		border: 2px solid;
+		background: transparent;
+	}
+
+	&.btn-round{
+		.border-radius(40px);
+	}
+
+	&.btn-square{
+		.border-radius(0);
+	}
+}
