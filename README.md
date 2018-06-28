@@ -1,6 +1,8 @@
 ## JQuery Validator
 ### Formulario utilizando JQuery Validator, con estilos de Bootstrap y SASS
 
+- [Ver Demo](https://santosf5.github.io/Jquery-Validator/)
+
 #### Index.html
 - HTML del Formulario; cargados por CDN: Jquery, Jquery Validate, Bootstrap (CSS Y JS)
 - Cargando desde local: js/app.js y css/custom.css
